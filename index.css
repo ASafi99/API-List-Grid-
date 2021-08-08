@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;
+}
+
+.my-api {
+    display: grid;
+    grid-template-rows:3rem 1rem 4rem 3rem;
+    grid-template-columns: repeat(3,calc(100%/3));
+    background:lightblue;
+    margin: 1em;
+    border-radius: 1em;
+    grid-gap: 1em;
+    
+    /* The grid should have 4 rows
+        3rem, 1rem, 4rem, 3rem respectively
+        and 3 columns each 1/3rd of available width */
+    
+}
+
+.my-api-name {
+    grid-column: span 3;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5rem;
+    
+}
+.my-api-description {
+    grid-column: span 3;
+    font-size: 1.3rem;
+    text-align: center;
+    grid-row: 3;
+}
+.my-api-auth {
+    grid-column:  1;
+    text-align: center;
+    grid-row: 4;
+    font-size: 1.3rem;
+}
+.my-api-https {
+     grid-column: 3;
+    grid-row: 4;
+    font-size: 1.3rem;
+}
